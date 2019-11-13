@@ -38,7 +38,7 @@ public:
     QPushButton *Button7;
     QPushButton *Button9;
     QPushButton *MemAdd;
-    QPushButton *Mulitply;
+    QPushButton *Multiply;
     QPushButton *Button8;
     QPushButton *MemGet;
     QPushButton *Clear;
@@ -73,7 +73,7 @@ public:
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"	background-color: #A9A9A9;\n"
+"	background-color: #D3D3D3;\n"
 "	border: 1px solid gray;\n"
 "	padding: 5px;\n"
 "}"));
@@ -91,7 +91,7 @@ public:
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"	background-color: #A9A9A9;\n"
+"	background-color: #D3D3D3;\n"
 "	border: 1px solid gray;\n"
 "	padding: 5px;\n"
 "}"));
@@ -109,7 +109,7 @@ public:
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"	background-color: #A9A9A9;\n"
+"	background-color: #D3D3D3;\n"
 "	border: 1px solid gray;\n"
 "	padding: 5px;\n"
 "}"));
@@ -121,13 +121,13 @@ public:
         sizePolicy.setHeightForWidth(MemClear->sizePolicy().hasHeightForWidth());
         MemClear->setSizePolicy(sizePolicy);
         MemClear->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"	background-color: #C0C0C0;\n"
+"	background-color: #FF8C00;\n"
 "	border: 1px solid gray;\n"
 "	padding: 5px;\n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"	background-color: #A9A9A9;\n"
+"	background-color: #FFA500;\n"
 "	border: 1px solid gray;\n"
 "	padding: 5px;\n"
 "}"));
@@ -139,13 +139,13 @@ public:
         sizePolicy.setHeightForWidth(Divide->sizePolicy().hasHeightForWidth());
         Divide->setSizePolicy(sizePolicy);
         Divide->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"	background-color: #C0C0C0;\n"
+"	background-color: #FF8C00;\n"
 "	border: 1px solid gray;\n"
 "	padding: 5px;\n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"	background-color: #A9A9A9;\n"
+"	background-color: #FFA500;\n"
 "	border: 1px solid gray;\n"
 "	padding: 5px;\n"
 "}"));
@@ -163,7 +163,7 @@ public:
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"	background-color: #A9A9A9;\n"
+"	background-color: #D3D3D3;\n"
 "	border: 1px solid gray;\n"
 "	padding: 5px;\n"
 "}"));
@@ -181,7 +181,7 @@ public:
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"	background-color: #A9A9A9;\n"
+"	background-color: #D3D3D3;\n"
 "	border: 1px solid gray;\n"
 "	padding: 5px;\n"
 "}"));
@@ -199,7 +199,7 @@ public:
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"	background-color: #A9A9A9;\n"
+"	background-color: #D3D3D3;\n"
 "	border: 1px solid gray;\n"
 "	padding: 5px;\n"
 "}"));
@@ -211,13 +211,13 @@ public:
         sizePolicy.setHeightForWidth(Add->sizePolicy().hasHeightForWidth());
         Add->setSizePolicy(sizePolicy);
         Add->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"	background-color: #C0C0C0;\n"
+"	background-color: #FF8C00;\n"
 "	border: 1px solid gray;\n"
 "	padding: 5px;\n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"	background-color: #A9A9A9;\n"
+"	background-color: #FFA500;\n"
 "	border: 1px solid gray;\n"
 "	padding: 5px;\n"
 "}"));
@@ -235,7 +235,7 @@ public:
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"	background-color: #A9A9A9;\n"
+"	background-color: #D3D3D3;\n"
 "	border: 1px solid gray;\n"
 "	padding: 5px;\n"
 "}"));
@@ -253,7 +253,7 @@ public:
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"	background-color: #A9A9A9;\n"
+"	background-color: #D3D3D3;\n"
 "	border: 1px solid gray;\n"
 "	padding: 5px;\n"
 "}"));
@@ -265,36 +265,36 @@ public:
         sizePolicy.setHeightForWidth(MemAdd->sizePolicy().hasHeightForWidth());
         MemAdd->setSizePolicy(sizePolicy);
         MemAdd->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"	background-color: #C0C0C0;\n"
+"	background-color: #FF8C00;\n"
 "	border: 1px solid gray;\n"
 "	padding: 5px;\n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"	background-color: #A9A9A9;\n"
+"	background-color: #FFA500;\n"
 "	border: 1px solid gray;\n"
 "	padding: 5px;\n"
 "}"));
 
         gridLayout->addWidget(MemAdd, 1, 4, 1, 1);
 
-        Mulitply = new QPushButton(centralwidget);
-        Mulitply->setObjectName(QString::fromUtf8("Mulitply"));
-        sizePolicy.setHeightForWidth(Mulitply->sizePolicy().hasHeightForWidth());
-        Mulitply->setSizePolicy(sizePolicy);
-        Mulitply->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"	background-color: #C0C0C0;\n"
+        Multiply = new QPushButton(centralwidget);
+        Multiply->setObjectName(QString::fromUtf8("Multiply"));
+        sizePolicy.setHeightForWidth(Multiply->sizePolicy().hasHeightForWidth());
+        Multiply->setSizePolicy(sizePolicy);
+        Multiply->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"	background-color: #FF8C00;\n"
 "	border: 1px solid gray;\n"
 "	padding: 5px;\n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"	background-color: #A9A9A9;\n"
+"	background-color: #FFA500;\n"
 "	border: 1px solid gray;\n"
 "	padding: 5px;\n"
 "}"));
 
-        gridLayout->addWidget(Mulitply, 2, 3, 1, 1);
+        gridLayout->addWidget(Multiply, 2, 3, 1, 1);
 
         Button8 = new QPushButton(centralwidget);
         Button8->setObjectName(QString::fromUtf8("Button8"));
@@ -307,7 +307,7 @@ public:
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"	background-color: #A9A9A9;\n"
+"	background-color: #D3D3D3;\n"
 "	border: 1px solid gray;\n"
 "	padding: 5px;\n"
 "}"));
@@ -319,13 +319,13 @@ public:
         sizePolicy.setHeightForWidth(MemGet->sizePolicy().hasHeightForWidth());
         MemGet->setSizePolicy(sizePolicy);
         MemGet->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"	background-color: #C0C0C0;\n"
+"	background-color: #FF8C00;\n"
 "	border: 1px solid gray;\n"
 "	padding: 5px;\n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"	background-color: #A9A9A9;\n"
+"	background-color: #FFA500;\n"
 "	border: 1px solid gray;\n"
 "	padding: 5px;\n"
 "}"));
@@ -343,7 +343,7 @@ public:
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"	background-color: #A9A9A9;\n"
+"	background-color: #D3D3D3;\n"
 "	border: 1px solid gray;\n"
 "	padding: 5px;\n"
 "}"));
@@ -361,7 +361,7 @@ public:
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"	background-color: #A9A9A9;\n"
+"	background-color: #D3D3D3;\n"
 "	border: 1px solid gray;\n"
 "	padding: 5px;\n"
 "}"));
@@ -379,7 +379,7 @@ public:
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"	background-color: #A9A9A9;\n"
+"	background-color: #D3D3D3;\n"
 "	border: 1px solid gray;\n"
 "	padding: 5px;\n"
 "}"));
@@ -391,13 +391,13 @@ public:
         sizePolicy.setHeightForWidth(Subtract->sizePolicy().hasHeightForWidth());
         Subtract->setSizePolicy(sizePolicy);
         Subtract->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"	background-color: #C0C0C0;\n"
+"	background-color: #FF8C00;\n"
 "	border: 1px solid gray;\n"
 "	padding: 5px;\n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"	background-color: #A9A9A9;\n"
+"	background-color: #FFA500;\n"
 "	border: 1px solid gray;\n"
 "	padding: 5px;\n"
 "}"));
@@ -409,13 +409,13 @@ public:
         sizePolicy.setHeightForWidth(Equals->sizePolicy().hasHeightForWidth());
         Equals->setSizePolicy(sizePolicy);
         Equals->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"	background-color: #C0C0C0;\n"
+"	background-color: #FF8C00;\n"
 "	border: 1px solid gray;\n"
 "	padding: 5px;\n"
 "}\n"
 "\n"
 "QPushButton:pressed {\n"
-"	background-color: #A9A9A9;\n"
+"	background-color: #FFA500;\n"
 "	border: 1px solid gray;\n"
 "	padding: 5px;\n"
 "}"));
@@ -433,7 +433,7 @@ public:
         font.setWeight(75);
         Display->setFont(font);
         Display->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
-"	background-color: gray;\n"
+"	background-color: DCDCDC;\n"
 "	border: 1px solid gray;\n"
 "	color: #ffffff;\n"
 "}\n"
@@ -472,7 +472,7 @@ public:
         Button7->setText(QApplication::translate("MainWindow", "7", nullptr));
         Button9->setText(QApplication::translate("MainWindow", "9", nullptr));
         MemAdd->setText(QApplication::translate("MainWindow", "M+", nullptr));
-        Mulitply->setText(QApplication::translate("MainWindow", "*", nullptr));
+        Multiply->setText(QApplication::translate("MainWindow", "*", nullptr));
         Button8->setText(QApplication::translate("MainWindow", "8", nullptr));
         MemGet->setText(QApplication::translate("MainWindow", "M", nullptr));
         Clear->setText(QApplication::translate("MainWindow", "AC", nullptr));
