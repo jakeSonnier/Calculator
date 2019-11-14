@@ -29,7 +29,7 @@ public:
     QPushButton *Button3;
     QPushButton *Button1;
     QPushButton *Button4;
-    QPushButton *MemClear;
+    QPushButton *MemRecall;
     QPushButton *Divide;
     QPushButton *Button2;
     QPushButton *Button5;
@@ -37,10 +37,10 @@ public:
     QPushButton *Add;
     QPushButton *Button7;
     QPushButton *Button9;
-    QPushButton *MemAdd;
+    QPushButton *MemClear;
     QPushButton *Multiply;
     QPushButton *Button8;
-    QPushButton *MemGet;
+    QPushButton *MemStore;
     QPushButton *Clear;
     QPushButton *Button0;
     QPushButton *ChangeSign;
@@ -116,11 +116,11 @@ public:
 
         gridLayout->addWidget(Button4, 2, 0, 1, 1);
 
-        MemClear = new QPushButton(centralwidget);
-        MemClear->setObjectName(QString::fromUtf8("MemClear"));
-        sizePolicy.setHeightForWidth(MemClear->sizePolicy().hasHeightForWidth());
-        MemClear->setSizePolicy(sizePolicy);
-        MemClear->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        MemRecall = new QPushButton(centralwidget);
+        MemRecall->setObjectName(QString::fromUtf8("MemRecall"));
+        sizePolicy.setHeightForWidth(MemRecall->sizePolicy().hasHeightForWidth());
+        MemRecall->setSizePolicy(sizePolicy);
+        MemRecall->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background-color: #FF8C00;\n"
 "	border: 1px solid gray;\n"
 "	padding: 5px;\n"
@@ -132,7 +132,7 @@ public:
 "	padding: 5px;\n"
 "}"));
 
-        gridLayout->addWidget(MemClear, 2, 4, 1, 1);
+        gridLayout->addWidget(MemRecall, 2, 4, 1, 1);
 
         Divide = new QPushButton(centralwidget);
         Divide->setObjectName(QString::fromUtf8("Divide"));
@@ -260,11 +260,11 @@ public:
 
         gridLayout->addWidget(Button9, 1, 2, 1, 1);
 
-        MemAdd = new QPushButton(centralwidget);
-        MemAdd->setObjectName(QString::fromUtf8("MemAdd"));
-        sizePolicy.setHeightForWidth(MemAdd->sizePolicy().hasHeightForWidth());
-        MemAdd->setSizePolicy(sizePolicy);
-        MemAdd->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        MemClear = new QPushButton(centralwidget);
+        MemClear->setObjectName(QString::fromUtf8("MemClear"));
+        sizePolicy.setHeightForWidth(MemClear->sizePolicy().hasHeightForWidth());
+        MemClear->setSizePolicy(sizePolicy);
+        MemClear->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background-color: #FF8C00;\n"
 "	border: 1px solid gray;\n"
 "	padding: 5px;\n"
@@ -276,7 +276,7 @@ public:
 "	padding: 5px;\n"
 "}"));
 
-        gridLayout->addWidget(MemAdd, 1, 4, 1, 1);
+        gridLayout->addWidget(MemClear, 1, 4, 1, 1);
 
         Multiply = new QPushButton(centralwidget);
         Multiply->setObjectName(QString::fromUtf8("Multiply"));
@@ -314,11 +314,11 @@ public:
 
         gridLayout->addWidget(Button8, 1, 1, 1, 1);
 
-        MemGet = new QPushButton(centralwidget);
-        MemGet->setObjectName(QString::fromUtf8("MemGet"));
-        sizePolicy.setHeightForWidth(MemGet->sizePolicy().hasHeightForWidth());
-        MemGet->setSizePolicy(sizePolicy);
-        MemGet->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        MemStore = new QPushButton(centralwidget);
+        MemStore->setObjectName(QString::fromUtf8("MemStore"));
+        sizePolicy.setHeightForWidth(MemStore->sizePolicy().hasHeightForWidth());
+        MemStore->setSizePolicy(sizePolicy);
+        MemStore->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	background-color: #FF8C00;\n"
 "	border: 1px solid gray;\n"
 "	padding: 5px;\n"
@@ -330,7 +330,7 @@ public:
 "	padding: 5px;\n"
 "}"));
 
-        gridLayout->addWidget(MemGet, 3, 4, 1, 1);
+        gridLayout->addWidget(MemStore, 3, 4, 1, 1);
 
         Clear = new QPushButton(centralwidget);
         Clear->setObjectName(QString::fromUtf8("Clear"));
@@ -463,7 +463,7 @@ public:
         Button3->setText(QApplication::translate("MainWindow", "3", nullptr));
         Button1->setText(QApplication::translate("MainWindow", "1", nullptr));
         Button4->setText(QApplication::translate("MainWindow", "4", nullptr));
-        MemClear->setText(QApplication::translate("MainWindow", "M-", nullptr));
+        MemRecall->setText(QApplication::translate("MainWindow", "MR", nullptr));
         Divide->setText(QApplication::translate("MainWindow", "/", nullptr));
         Button2->setText(QApplication::translate("MainWindow", "2", nullptr));
         Button5->setText(QApplication::translate("MainWindow", "5", nullptr));
@@ -471,10 +471,10 @@ public:
         Add->setText(QApplication::translate("MainWindow", "+", nullptr));
         Button7->setText(QApplication::translate("MainWindow", "7", nullptr));
         Button9->setText(QApplication::translate("MainWindow", "9", nullptr));
-        MemAdd->setText(QApplication::translate("MainWindow", "M+", nullptr));
+        MemClear->setText(QApplication::translate("MainWindow", "MC", nullptr));
         Multiply->setText(QApplication::translate("MainWindow", "*", nullptr));
         Button8->setText(QApplication::translate("MainWindow", "8", nullptr));
-        MemGet->setText(QApplication::translate("MainWindow", "M", nullptr));
+        MemStore->setText(QApplication::translate("MainWindow", "MS", nullptr));
         Clear->setText(QApplication::translate("MainWindow", "AC", nullptr));
         Button0->setText(QApplication::translate("MainWindow", "0", nullptr));
         ChangeSign->setText(QApplication::translate("MainWindow", "+/-", nullptr));

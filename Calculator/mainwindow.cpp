@@ -7,6 +7,8 @@ bool multTrigger = false;
 bool subTrigger = false;
 bool addTrigger = false;
 
+QString memory = "0";
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -28,6 +30,10 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->Divide, SIGNAL(released()), this, SLOT(MathButtonPressed()));
     connect(ui->Equals, SIGNAL(released()), this, SLOT(EqualButton()));
     connect(ui->ChangeSign, SIGNAL(released()), this, SLOT(ChangeSign()));
+    connect(ui->Clear, SIGNAL(released()), this, SLOT(ClearScreen()));
+    connect(ui->MemClear, SIGNAL(released()), this, SLOT(MemoryClear()));
+    connect(ui->MemStore, SIGNAL(released()), this, SLOT(MemoryStore()));
+    connect(ui->MemRecall, SIGNAL(released()), this, SLOT(MemoryRecall()));
 }
 
 MainWindow::~MainWindow()
@@ -121,15 +127,54 @@ void MainWindow::ChangeSign()
     {
         double dblDisplayVal = displayVal.toDouble();
         double dblDisplayValSign = -1 * dblDisplayVal;
-        ui->Display->setText(QString::number(dblDisplayVal));
+        ui->Display->setText(QString::number(dblDisplayValSign));
     }
 }
 
+void MainWindow::ClearScreen()
+{
+    QPushButton *button = (QPushButton *)sender();
+    QString buttonVal = button->text();
 
+    if (QString::compare(buttonVal, "AC", Qt::CaseInsensitive) == 0)
+    {
+       ui->Display->setText("0");
+    }
+}
 
+void MainWindow::MemoryClear()
+{
+    QPushButton *button = (QPushButton *)sender();
+    QString buttonVal = button->text();
 
+    if (QString::compare(buttonVal, "MC", Qt::CaseInsensitive) == 0)
+    {
+       memory = "0";
+    }
+}
 
+void MainWindow::MemoryStore()
+{
+    QPushButton *button = (QPushButton *)sender();
+    QString buttonVal = button->text();
 
+    if (QString::compare(buttonVal, "MS", Qt::CaseInsensitive) == 0)
+    {
+       memory = ui->Display->text();
+    }
+}
+
+void MainWindow::MemoryRecall()
+{
+    QPushButton *button = (QPushButton *)sender();
+    QString buttonVal = button->text();
+
+    if (QString::compare(buttonVal, "MR", Qt::CaseInsensitive) == 0)
+    {
+        if (QString::compare(memory, "0"))
+        ui->Display->setText(memory);
+    }
+}
 
 
 

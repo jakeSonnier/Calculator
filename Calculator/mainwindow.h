@@ -23,5 +23,9 @@ private slots:
     void MathButtonPressed();
     void EqualButton();
     void ChangeSign();
+    void ClearScreen();
+    void MemoryClear();
+    void MemoryRecall();
+    void MemoryStore();
 };
 #endif // MAINWINDOW_H

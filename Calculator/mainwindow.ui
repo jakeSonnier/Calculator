@@ -94,7 +94,7 @@ QPushButton:pressed {
      </widget>
     </item>
     <item row="2" column="4">
-     <widget class="QPushButton" name="MemClear">
+     <widget class="QPushButton" name="MemRecall">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
         <horstretch>0</horstretch>
@@ -115,7 +115,7 @@ QPushButton:pressed {
 }</string>
       </property>
       <property name="text">
-       <string>M-</string>
+       <string>MR</string>
       </property>
      </widget>
     </item>
@@ -302,7 +302,7 @@ QPushButton:pressed {
      </widget>
     </item>
     <item row="1" column="4">
-     <widget class="QPushButton" name="MemAdd">
+     <widget class="QPushButton" name="MemClear">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
         <horstretch>0</horstretch>
@@ -323,7 +323,7 @@ QPushButton:pressed {
 }</string>
       </property>
       <property name="text">
-       <string>M+</string>
+       <string>MC</string>
       </property>
      </widget>
     </item>
@@ -380,7 +380,7 @@ QPushButton:pressed {
      </widget>
     </item>
     <item row="3" column="4">
-     <widget class="QPushButton" name="MemGet">
+     <widget class="QPushButton" name="MemStore">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
         <horstretch>0</horstretch>
@@ -401,7 +401,7 @@ QPushButton:pressed {
 }</string>
       </property>
       <property name="text">
-       <string>M</string>
+       <string>MS</string>
       </property>
      </widget>
     </item>
